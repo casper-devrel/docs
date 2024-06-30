@@ -27,7 +27,7 @@ const routePrefix = !docsOnlyMode ? "/docs" : "/";
 module.exports = {
     ...siteConfig,
     i18n: i18nConfig,
-    baseUrl: "/",
+    baseUrl: "/docs",
     /* Optional */
     customFields: {
         // customFields: dataConfig,
