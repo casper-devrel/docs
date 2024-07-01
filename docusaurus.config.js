@@ -59,7 +59,7 @@ module.exports = {
             {
                 docs: {
                     // remarkPlugins: [],
-                    path: "source/docs/casper",
+                    path: "source/docs/",
                     routeBasePath: routePrefix, // IMPORTANT: Turn on docs-only mode
                     sidebarPath: require.resolve("./config/sidebar.config.js"),
                     editUrl: getEditUrl,

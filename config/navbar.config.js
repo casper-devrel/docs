@@ -90,22 +90,22 @@ module.exports = {
         //     label: "Integration",
         //     position: "right",
         // },
-        {
-            type: "localeDropdown",
-            position: "right",
-        },
-        // Remove comment to show version control item
         // {
-        //     type: "docsVersionDropdown",
+        //     type: "localeDropdown",
         //     position: "right",
-        //     dropdownActiveClassDisabled: true,
-        //     dropdownItemsAfter: [
-        //         {
-        //             to: "/versions",
-        //             label: "All versions",
-        //         },
-        //     ],
         // },
+        // Remove comment to show version control item
+        {
+            type: "docsVersionDropdown",
+            position: "right",
+            dropdownActiveClassDisabled: true,
+            dropdownItemsAfter: [
+                {
+                    to: "/versions",
+                    label: "All versions",
+                },
+            ],
+        },
         {
             href: "https://github.com/casper-network/docs/blob/dev/README.md",
             label: "GitHub",

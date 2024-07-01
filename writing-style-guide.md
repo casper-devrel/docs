@@ -243,9 +243,9 @@ Examples:
 
 ### Casper Components
 
-When discussing [internal components of the Casper platform](./source/docs/casper/concepts/serialization-standard.md), formatting depends on the context with which you are discussing the component. 
+When discussing [internal components of the Casper platform](./source/docs/concepts/serialization-standard.md), formatting depends on the context with which you are discussing the component. 
 
-As an example, if you are talking directly about the `PublicKey` [CLValue](./source/docs/casper/concepts/serialization-standard.md#publickey-clvalue-publickey) in the context of code, you would use the backtick enclosed `PublicKey` format. If you are talking about public keys in a more general context, you would follow normal sentence conventions.
+As an example, if you are talking directly about the `PublicKey` [CLValue](./source/docs/concepts/serialization-standard.md#publickey-clvalue-publickey) in the context of code, you would use the backtick enclosed `PublicKey` format. If you are talking about public keys in a more general context, you would follow normal sentence conventions.
 
 Examples:
 
@@ -278,6 +278,6 @@ If values are required for illustration purposes, remind readers in the first ex
 
 >**Note**: The payment amount varies based on each deploy and network [chainspec](../../concepts/glossary/C.md#chainspec).
 
-You can find more examples in [this document](./source/docs/casper/developers/cli/calling-contracts.md).
+You can find more examples in [this document](./source/docs/developers/cli/calling-contracts.md).
 
 

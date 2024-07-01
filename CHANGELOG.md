@@ -1,1 +1,1 @@
-Documentation updates by protocol release are saved [here](./source/docs/casper/resources/changelog.md).
+Documentation updates by protocol release are saved [here](./source/docs/resources/changelog.md).
