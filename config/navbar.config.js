@@ -95,16 +95,22 @@ module.exports = {
         //     position: "right",
         // },
         // Remove comment to show version control item
+        // dropdownItemsAfter: [
+        //     {
+        //         to: "/versions",
+        //         label: "All versions",
+        //     },
+        // ],
+        //             dropdownItemsAfter: [{ to: '/versions', label: 'All versions' }],
+
+        {
+            type: "search",
+            position: "right",
+        },
         {
             type: "docsVersionDropdown",
             position: "right",
             dropdownActiveClassDisabled: true,
-            dropdownItemsAfter: [
-                {
-                    to: "/versions",
-                    label: "All versions",
-                },
-            ],
         },
         {
             href: "https://github.com/casper-network/docs/blob/dev/README.md",

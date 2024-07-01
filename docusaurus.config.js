@@ -70,6 +70,19 @@ module.exports = {
                     // remarkPlugins: [require("@react-native-website/remark-snackplayer")],
                     // editCurrentVersion: true,
                     // onlyIncludeVersions: process.env.PREVIEW_DEPLOY === "true" ? ["current", ...versions.slice(0, 2)] : undefined,
+                    //lastVersion: 'current'
+                    lastVersion: "2.0.0",
+                    versions: {
+                        current: {
+                            label: "next",
+                        },
+                    },
+                    // versions: {
+                    //     current: {
+                    //         label: '2.0.0',
+                    //         path: '2.0.0',
+                    //     },
+                    // },
                 },
                 ...(gtagConfig["trackingID"] && { gtag: gtagConfig }),
                 ...(gtmConfig["containerId"] && { googleTagManager: gtmConfig }),
