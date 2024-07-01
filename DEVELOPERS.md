@@ -73,7 +73,7 @@ You might find these commands useful:
 
 ## Page Development
 
-- To create a new document, add an `md` or `mdx` file at an intuitive location in the source directory, [docs/casper](./source/docs/casper/). Page routing will depend on page hierarchy unless you specify the routing in the [config](./config/) folder. 
+- To create a new document, add an `md` or `mdx` file at an intuitive location in the source directory, [docs/casper](./source/docs/). Page routing will depend on page hierarchy unless you specify the routing in the [config](./config/) folder. 
    - You will need to [update the sidebar](#sidebar-footer-and-navbar-development) to include the new file.
    - To add an overview page or a new tutorial, use a template from the [templates](.github/templates) folder.
    - Add images in the [static/image](./static/image/) directory.
