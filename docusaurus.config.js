@@ -110,25 +110,25 @@ module.exports = {
         "docusaurus-plugin-sass",
         /* Optional */
         // ["@docusaurus/plugin-pwa", pwaConfig],
-        [
-            "docusaurus-plugin-navdata",
-            {
-                directusUrl: process.env.DIRECTUS_URL,
-                directusGraphqlUrl: process.env.DIRECTUS_GRAPHQL_URL,
-                directusToken: process.env.DIRECTUS_TOKEN,
-                query:
-                    "query { header { translations { languages_code { code } login_text search_placeholder logo { id } navigation_tree } } social_media { name url icon { id } } footer { translations { title description manage_cookies_text logo { id title } bottom_links { link_id { title type url open_in_new_tab } } languages_code { code } footer_tree }}}",
-            },
-        ],
-        [
-            "docusaurus-plugin-cookiesbanner",
-            {
-                directusUrl: process.env.DIRECTUS_URL,
-                directusGraphqlUrl: process.env.DIRECTUS_GRAPHQL_URL,
-                directusToken: process.env.DIRECTUS_TOKEN,
-                query:
-                    "query { cookie_banner { translations {  languages_code { code } items { cookie_item_id { required parameter title description } } manage_body manage_title notice_body notice_title manage_button_text accept_all_button_text confirm_button_text } } }",
-            },
-        ],
+        // [
+        //     "docusaurus-plugin-navdata",
+        //     {
+        //         directusUrl: process.env.DIRECTUS_URL,
+        //         directusGraphqlUrl: process.env.DIRECTUS_GRAPHQL_URL,
+        //         directusToken: process.env.DIRECTUS_TOKEN,
+        //         query:
+        //             "query { header { translations { languages_code { code } login_text search_placeholder logo { id } navigation_tree } } social_media { name url icon { id } } footer { translations { title description manage_cookies_text logo { id title } bottom_links { link_id { title type url open_in_new_tab } } languages_code { code } footer_tree }}}",
+        //     },
+        // ],
+        // [
+        //     "docusaurus-plugin-cookiesbanner",
+        //     {
+        //         directusUrl: process.env.DIRECTUS_URL,
+        //         directusGraphqlUrl: process.env.DIRECTUS_GRAPHQL_URL,
+        //         directusToken: process.env.DIRECTUS_TOKEN,
+        //         query:
+        //             "query { cookie_banner { translations {  languages_code { code } items { cookie_item_id { required parameter title description } } manage_body manage_title notice_body notice_title manage_button_text accept_all_button_text confirm_button_text } } }",
+        //     },
+        // ],
     ],
 };
