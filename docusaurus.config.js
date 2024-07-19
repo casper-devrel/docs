@@ -40,7 +40,7 @@ module.exports = {
             maxHeadingLevel: 6,
         },
         ...(algoliaConfig["apiKey"] && { algolia: algoliaConfig }),
-        // announcementBar: announcementConfig,
+        announcementBar: announcementConfig,
         colorMode: colorConfig,
         footer: footerConfig,
         docs: {
@@ -71,12 +71,12 @@ module.exports = {
                     // editCurrentVersion: true,
                     // onlyIncludeVersions: process.env.PREVIEW_DEPLOY === "true" ? ["current", ...versions.slice(0, 2)] : undefined,
                     //lastVersion: 'current'
-                    lastVersion: "2.0.0",
-                    versions: {
-                        current: {
-                            label: "next",
-                        },
-                    },
+                    // lastVersion: "1.5.6",
+                    // versions: {
+                    //     current: {
+                    //         label: "next",
+                    //     },
+                    // },
                     // versions: {
                     //     current: {
                     //         label: '2.0.0',
@@ -101,7 +101,7 @@ module.exports = {
                 //     },
                 // },
                 theme: {
-                    customCss: [require.resolve("./src/assets/scss/theme.scss")],
+                    //  customCss: [require.resolve("./src/assets/scss/theme.scss")],
                 },
             },
         ],

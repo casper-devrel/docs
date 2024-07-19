@@ -49,10 +49,12 @@ module.exports = {
         {
             href: "https://support.casperlabs.io/",
             label: "Support",
+            position: "right",
         },
         {
             href: "https://discord.com/invite/casperblockchain",
-            label: "Chat",
+            label: "Discord",
+            position: "right",
         },
 
         // {
@@ -110,7 +112,6 @@ module.exports = {
         {
             type: "docsVersionDropdown",
             position: "right",
-            dropdownActiveClassDisabled: true,
         },
         {
             href: "https://github.com/casper-network/docs/blob/dev/README.md",
