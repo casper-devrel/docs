@@ -102,6 +102,7 @@ module.exports = {
                 // },
                 theme: {
                     //  customCss: [require.resolve("./src/assets/scss/theme.scss")],
+                    customCss: [require.resolve("./static/css/custom.scss")],
                 },
             },
         ],
