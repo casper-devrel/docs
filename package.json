@@ -9,7 +9,7 @@
         "build": "yarn run preinstall && docusaurus build",
         "preinstall": "yarn run buildcookiesplugin && yarn link docusaurus-plugin-cookiesbanner",
         "swizzle": "docusaurus swizzle",
-        "pages": "gh-pages -d build",
+        "gh-pages": "gh-pages -d build",
         "deploy": "docusaurus deploy",
         "clear": "docusaurus clear",
         "serve": "docusaurus serve",

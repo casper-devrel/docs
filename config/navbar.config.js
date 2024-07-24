@@ -2,7 +2,7 @@ const docsOnlyMode = process.env.DOCS_MODE || true;
 const routePrefix = !docsOnlyMode ? "docs" : "";
 
 module.exports = {
-    title: "",
+    title: "Casper Docs",
     logo: {
         alt: "Casper Logo",
         src: "/icon/Casper_Wordmark_Red_RGB.png",

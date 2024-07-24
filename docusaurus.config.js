@@ -27,10 +27,9 @@ const routePrefix = !docsOnlyMode ? "/docs" : "/";
 module.exports = {
     ...siteConfig,
     i18n: i18nConfig,
-    baseUrl: "/",
     /* Optional */
     customFields: {
-        // customFields: dataConfig,
+        customFields: dataConfig,
         ...siteNavbarConfig,
     },
     scripts: [{ src: "/js/loadtags.js", async: true, type: "module" }],
@@ -49,7 +48,7 @@ module.exports = {
             },
         },
         /* Optional */
-        // metadatas: metadatasConfig,
+        metadata: metadatasConfig,
         navbar: navbarConfig,
         prism: prismConfig,
     },
@@ -65,44 +64,16 @@ module.exports = {
                     editUrl: getEditUrl,
                     exclude: ["./contract-dsl/archived", "./economics/archived", "./theory"],
                     /* Docs config options */
-                    // showLastUpdateAuthor: false,
+                    showLastUpdateAuthor: false,
                     showLastUpdateTime: true,
-                    // remarkPlugins: [require("@react-native-website/remark-snackplayer")],
-                    // editCurrentVersion: true,
-                    // onlyIncludeVersions: process.env.PREVIEW_DEPLOY === "true" ? ["current", ...versions.slice(0, 2)] : undefined,
-                    //lastVersion: 'current'
-                    // lastVersion: "1.5.6",
-                    // versions: {
-                    //     current: {
-                    //         label: "next",
-                    //     },
-                    // },
-                    // versions: {
-                    //     current: {
-                    //         label: '2.0.0',
-                    //         path: '2.0.0',
-                    //     },
-                    // },
                 },
                 ...(gtagConfig["trackingID"] && { gtag: gtagConfig }),
                 ...(gtmConfig["containerId"] && { googleTagManager: gtmConfig }),
                 // IMPORTANT: disable blog feature
                 blog: false,
-                /* Blog config options */
-                // {
-                //     showReadingTime: true,
-                //     editUrl: "https://github.com/casper-network/documentation/blob/master/blog",
-                //     path: "blog",
-                //     blogSidebarCount: "ALL",
-                //     blogSidebarTitle: "All Blog Posts",
-                //     feedOptions: {
-                //         type: "all",
-                //         copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
-                //     },
-                // },
                 theme: {
                     //  customCss: [require.resolve("./src/assets/scss/theme.scss")],
-                    customCss: [require.resolve("./static/css/custom.scss")],
+                    //customCss: [require.resolve("./static/css/custom.scss")],
                 },
             },
         ],
